@@ -1,0 +1,126 @@
+html{
+    height: 100%
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    background-color:gainsboro;
+    color:black;
+    padding: 10px;
+    width: 100%;
+    height: 140px;
+}
+
+.header-container{
+    grid-template-columns: 2fr 1fr;
+    gap: 1em;
+    /* border: 1px sold #ccc; */
+    /* border-radius: 5px; */
+    padding: 2em;
+    /* box-shadow: 0 0 10px #62c0ff5a; */
+    margin: 5em;
+}
+
+.logo{
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header-container .image img {
+    width: 400px;
+    height: 150px;
+    border-radius: 5px;
+    display: block;  /* Ensures the image behaves as a block element */
+    position: absolute;  /* Positions the image absolutely within the container */
+    top: 0;  /* Places the image at the top of the container */
+    left: 0;  /* Places the image at the left of the container */
+}
+
+footer{
+    background-color:aquamarine;
+    text-align: top;
+    padding: 1em;
+    font-weight: bold;
+    color:aliceblue;
+}
+
+.content-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1em;
+    border: 1px sold #ccc;
+    border-radius: 5px;
+    padding: 2em;
+    box-shadow: 0 0 10px #62c0ff5a;
+    margin: 5em;
+}
+
+.content-container .content h2{
+    color:black;
+    margin-top: 0;
+    text-align: center;
+    padding: 1em;
+}
+
+.content-container .image img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.pet-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 4em;
+    padding: 20px;
+    margin: 4em;    
+}
+
+.animal-card img{
+    width: 400px;
+    height: 500px;
+    width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+}
+
+.animal-card{
+    width: 500px;
+    height: 900px;
+    display: grid;
+    grid-template-rows:(2, 1fr);
+    gap: 10px;
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #62c0ff5a;
+    margin: auto;
+    border: 1px solid #ccc;
+}
+
+.animal-detail{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 0.5em;
+}
+
+.applicationForm{
+    /* width: 800px;
+    height: 350px;
+    display: grid; */
+    text-align: center;
+    grid-template-columns: 1fr, 1fr;
+    align-items: center;
+}
+
+
+
+
+

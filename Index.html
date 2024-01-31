@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Assigment 3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <div class="header-container">
+            <div class="logo">Adopt Animals</div>
+            <div class="image">
+                <img src="/image/AdoptMe.jpg" alt="my logo">
+            </div>            
+        </div>
+    </header>
+</body>
+<main>
+    <!-- Content container section -->
+    <section class="content-container">
+        <div class="content">
+            <h2>Find Your New Best Friends</h2>
+            <!-- Paragraph describing the joys of animal adoption -->
+            <p>Adopting a furry friend can bring immense joy and companionship into your life. Animal adoption is a heartwarming and compassionate choice 
+                that not only transforms the life of the pet but also enriches yours. By opting to adopt from a shelter or rescue organization, 
+                ou give a deserving animal a second chance for a loving home. Whether you're looking for a playful puppy, a majestic cat, or a gentle rabbit, 
+                there's a diverse array of animals waiting for their forever homes. Adopting not only saves lives but also promotes responsible pet ownership 
+                and helps reduce the population of homeless animals. Embrace the rewarding journey of animal adoption and make a positive impact on the lives of 
+                these wonderful creatures who simply want a place to call home. Your decision to adopt not only adds a new member to your family but also contributes 
+                to creating a more compassionate and caring community for animals in need.</p>
+        </div>
+        <div class="image">
+            <img src="/image/adoption-simple-et-plénière.jpg" alt="A lovely pitcture with colorful words and the lovely family with black background.">
+        </div>       
+    </section>
+    <!-- Pet container section -->
+    <section class="pet-container">
+        <div class="animal-card">
+            <img src="/image/dog.jpg" alt="The white cut puppy with yellow cercle on it's eyes sitting in a person's hands waiting for your adoption.">
+            <div class="animal-details">
+                <h2>White puppy</h2>
+                <p>Age:4 weeks</p>
+                <!-- Description of the white puppy -->
+                <p>Meet the adorable white puppy that is patiently awaiting your love and care! This sweet and affectionate canine companion is not just a furry friend; 
+                    it's a bundle of joy ready to bring warmth and happiness into your home. With its fluffy coat and bright eyes, this little one is not only irresistibly 
+                    cute but also holds the promise of becoming a loyal and cherished member of your family. As you consider adopting this delightful white puppy, envision 
+                    the countless moments of shared laughter, playful antics, and unwavering companionship that await. By opening your heart and home to this furry friend, 
+                    you're not just providing a forever home but also embarking on a journey filled with love, tail wags, and the purest form of canine devotion. Don't miss 
+                    the chance to make a lasting difference in the life of this precious puppy – your future loyal companion is eagerly awaiting your embrace.</p>
+            </div>
+        </div>
+        <!-- Animal card for a yellow cat with brown stripes -->
+        <div class="animal-card">
+            <img src="/image/cat.jpg" alt="The person holes a yellow cat with brown strips in his arm wiating for your adoption.">
+            <div class="animal-details">
+                <h2>yellow cat with brown stripes kitten</h2>
+                <p>Age: 4 weeks</p>
+                <p>Meet our delightful feline friend, a yellow cat with enchanting brown stripes, eagerly awaiting the perfect forever home. 
+                    This charming and distinctive kitty is not just a furry companion but a unique bundle of joy ready to bring warmth and happiness into your life. 
+                    With its sunny yellow fur adorned by graceful brown stripes, this cat stands out as a visual delight, and its playful demeanor is bound to capture your heart. 
+                    From gentle purrs to curious whiskers, this yellow cat promises to fill your home with love and laughter. As you consider adoption, envision the countless 
+                    moments of companionship and the rewarding journey of nurturing a bond that will last a lifetime. Embrace the opportunity to provide a loving home for this 
+                    special yellow cat with brown stripes and embark on an adventure filled with feline charm and unconditional love. Your new feline friend is patiently waiting for 
+                    the chance to make your house a home.</p>
+            </div>
+        </div>
+                    <!-- Animal card for a white bird with yellow fur on its head -->
+        <div class="animal-card">
+            <img src="/image/bird.jpg" alt="A standing bird with white fur on it's whole body and the yellow fur on it's head wiating for your adoption.">
+            <div class="animal-details">
+                <h2>A white bird with yellow fur on it's head</h2>
+                <p>Age: 9 month</p>
+                <!-- Description of the white bird with yellow fur on its head -->
+                <p>Introducing a feathered friend with a striking and unique appearance – a bird adorned in pristine white feathers with a touch of sunshine in the form of yellow plumage 
+                    adorning its head. This elegant avian companion is not just a bird; it's a beautiful testament to the wonders of nature, patiently awaiting the perfect adoptive home. 
+                    With its graceful white plumage that covers its entire body and the vibrant accent of yellow feathers atop its head, this bird stands out as a visual masterpiece. 
+                    Its captivating presence is not only visually enchanting but also promises to bring a symphony of cheerful chirps and avian charm into your home. 
+                    As you consider welcoming this feathered friend into your life, imagine the joy of nurturing a unique bond and experiencing the delightful melodies that this bird 
+                    can bring to your everyday life. Embrace the opportunity to provide a loving home for this extraordinary bird, and discover the harmonious connection that awaits you both. 
+                    Your new feathered companion is ready to fill your world with wings of happiness.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+ <!-- Application Form section -->
+ <div class="applicationForm">
+    <!-- Dropdown for selecting the type of animal to adopt -->
+    <h1>Application Form</h1>
+    <form id="applicationForm">
+        <label for="AnimalType">Adopt Animal Type</label>
+        <select id="AnimalType">
+            <option value="">Select One</option>
+            <option value="Dog">Dog</option>
+            <option value="Cat">Cat</option>
+            <option value="Bird">Bird</option>
+        </select>
+         <!-- Error message for animal type selection -->
+        <span id="animalTypeError">...</span>
+        <br><br>
+        <!-- Question about having an animal already -->
+        <label for="haveAnimal">Do you have an animal already? (yes or no)</label>
+        <br>
+        <input type="text" id="haveAnimal">
+        <!-- Error message for the answer to having an animal already -->
+        <div id="haveAnimalError">...</div>
+        <br>
+        <!-- Question about having kids -->
+        <label for="haveKids">Do you have kids? (yes or no)</label>
+        <br>
+        <input type="text" id="haveKids">
+        <!-- Error message for the answer to having kids -->
+        <div id="haveKidsError">...</div>
+        <br>
+        <!-- Question about house type -->
+        <label for="houseType">What kind of house do you have? (condo or single family)</label>
+        <br>
+        <input type="text" id="houseType">
+        <div id="houseTypeError">...</div>
+        <br>
+         <<!-- Question about fence -->
+        <label for="haveFence">Does your home have a fence? (yes or no)</label>
+        <br>
+        <input type="text" id="haveFence">
+        <div id="haveFenceError">...</div>
+        <br>
+         <!-- Error message for choose error -->
+        <span id="chooseError">...</span>
+        <br><br>
+        <!-- submit -->
+        <button type="submit">SUBMIT</button>
+    </form>
+    <div id="confirmationMessage">...</div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Meili Zheng</p>
+</footer>
+
+<script>
+    const applicationForm = document.getElementById('applicationForm');
+    const animalType = document.getElementById('AnimalType');
+    const haveAnimalInput = document.getElementById('haveAnimal');
+    const haveKidsInput = document.getElementById('haveKids');
+    const houseTypeInput = document.getElementById('houseType');
+    const haveFenceInput = document.getElementById('haveFence');
+    const confirmationMessage = document.getElementById('confirmationMessage');
+    const haveAnimalError = document.getElementById('haveAnimalError'); // Corrected variable name
+    const haveKidsError = document.getElementById('haveKidsError'); // Corrected variable name
+    const houseTypeError = document.getElementById('houseTypeError'); // Corrected variable name
+    const haveFenceError = document.getElementById('haveFenceError'); // Corrected variable name
+
+    applicationForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        let selectedAnimal = 0;
+        let animalTypeError = "";
+        let isValid = true;
+
+        if (animalType.value) {
+            selectedAnimal = 1;
+            animalTypeError = "";
+            // Simplified check for selectedAnimal
+
+            if (selectedAnimal < 0) {
+                animalTypeError.textContent = "Please select pet.";
+                isValid = false;
+            }
+            // Consistent error message for 'yes' or 'no'
+            if (haveAnimalInput.value.toLowerCase() !== "yes" && haveAnimalInput.value.toLowerCase() !== "no") {
+                haveAnimalError.textContent = "Please enter 'yes' or 'no'.";
+                isValid = false;
+            } 
+            // Consistent error message for 'yes' or 'no'
+
+            if (haveKidsInput.value.toLowerCase() !== "yes" && haveKidsInput.value.toLowerCase() !== "no") {
+                haveKidsError.textContent = "Please enter 'yes' or 'no'.";
+                isValid = false;
+            }
+            // Consistent error message for house type
+
+            if (houseTypeInput.value.toLowerCase() !== "condom" && houseTypeInput.value.toLowerCase() !== "single family") {
+                houseTypeError.textContent = "Please enter 'condom' or 'single family'.";
+                isValid = false;
+            }
+            // Consistent error message for 'yes' or 'no'
+
+            if (haveFenceInput.value.toLowerCase() !== "yes" && haveFenceInput.value.toLowerCase() !== "no") {
+                haveFenceError.textContent = "Please enter 'yes' or 'no'.";
+                isValid = false;
+            }
+
+            if (isValid) {
+                confirmationMessage.textContent = "Thank you for your application!";
+                applicationForm.reset();
+            }
+        }
+    });
+</script>
+
+</html>
